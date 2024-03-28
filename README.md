@@ -748,3 +748,258 @@ int main() {
 
 }
 
+
+17- Faça um programa que receba o raio, calcule e mostre:
+a) o comprimento de uma esfera; sabe-se que C = 2 * p R;
+b) a área de uma esfera; sabe-se que A = p R2
+;
+c) o volume de uma esfera; sabe-se que V = 3⁄4 * p R3
+
+#include <stdio.h>
+
+
+#define PI 3.14159
+
+Int main() {
+    Float raio, comprimento, area, volume;
+
+    
+    Printf(“Digite o raio da esfera: “);
+    Scanf(“%f”, &raio);
+
+    
+    Comprimento = 2 * PI * raio;
+
+    
+    Area = PI * raio * raio;
+
+    
+    Volume = (3.0 / 4) * PI * pow(raio, 3);
+
+    
+    Printf(“O comprimento da esfera e: %.2f\n”, comprimento);
+    Printf(“A area da esfera e: %.2f\n”, area);
+    Printf(“O volume da esfera e: %.2f\n”, volume);
+
+    Return 0;
+}
+
+
+
+
+18-Faça um programa que receba uma temperatura em Celsius, calcule e mostre essa temperatura em
+Fahrenheit. Sabe-se que F = 180*(C + 32)/100.
+ #include <stdio.h>
+Int main() {
+
+    Float temperaturaCelsius, temperaturaFahrenheit;
+
+    
+    Printf(“Digite a temperatura em Celsius: “);
+    Scanf(“%f”, &temperaturaCelsius);
+
+    
+    temperaturaFahrenheit = (temperaturaCelsius * 9 / 5) + 32;
+
+    
+    printf(“A temperatura em Fahrenheit e: %.2f\n”, temperaturaFahrenheit);
+
+    return 0;
+}
+
+
+19- Sabe-se que, para iluminar de maneira correta os cômodos de uma casa, para cada m2, deve-se usar 18 W De potência. Faça um programa que receba as duas dimensões de um cômodo (em metros), calcule e mostre
+A sua área (em m2) e a potência de iluminação que deverá ser utilizada.
+
+#include <stdio.h>
+
+Int main() {
+    Float comprimento, largura, area, potencia_iluminacao;
+
+    
+    Printf(“Digite o comprimento do comodo em metros: “);
+    Scanf(“%f”, &comprimento);
+
+    Printf(“Digite a largura do comodo em metros: “);
+    Scanf(“%f”, &largura);
+
+    
+    Area = comprimento * largura;
+
+    
+    Potencia_iluminacao = area * 18;
+
+    
+    Printf(“A area do comodo e: %.2f m2\n”, area);
+    Printf(“A potencia de iluminacao necessaria e: %.2f W\n”, potencia_iluminacao);
+
+    Return 0;
+}
+
+
+ 20- Faça um programa que receba a medida do ângulo formado por uma escada apoiada no chão e a distância em que a escada está da parede, calcule e mostre a medida da escada para que se possa alcançar
+sua ponta.
+ #include <stdio.h>
+
+int main() {
+    float angulo_graus, distancia_parede, comprimento_escada;
+
+    printf("Digite a medida do angulo em graus: ");
+    scanf("%f", &angulo_graus);
+    
+
+    float angulo_radianos = angulo_graus * (PI / 180.0);
+    
+
+    printf("Digite a distancia da escada ate a parede: ");
+    scanf("%f", &distancia_parede);
+    
+
+    comprimento_escada = distancia_parede / sin(angulo_radianos);
+    
+
+    printf("O comprimento da escada para alcancar sua ponta e: %.2f\n", comprimento_escada);
+
+    return 0;
+}
+
+
+21-Faça um programa que receba o número de horas trabalhadas, o valor do salário mínimo e o número
+De horas extras trabalhadas, calcule e mostre o salário a receber, de acordo com as regras a seguir:
+a) a hora trabalhada vale 1/8 do salário mínimo;
+b) a hora extra vale ¼ do salário mínimo;                                                  c) o salário bruto equivale ao número de horas trabalhadas multiplicado pelo valor da hora trabalhada;
+d) a quantia a receber pelas horas extras equivale ao número de horas extras trabalhadas multiplicado pelo valorda hora extra;
+e) o salário a receber equivale ao salário bruto mais a quantia a receber pelas horas extras.
+ #include <stdio.h>
+
+Int main() {
+    Float horas_trabalhadas, salario_minimo, horas_extras, valor_hora, valor_hora_extra, salario_bruto, salario_total;
+
+    
+    Printf(“Digite o numero de horas trabalhadas: “);
+    Scanf(“%f”, &horas_trabalhadas);
+
+    Printf(“Digite o valor do salario minimo: “);
+    Scanf(“%f”, &salario_minimo);
+
+    Printf(“Digite o numero de horas extras trabalhadas: “);
+    Scanf(“%f”, &horas_extras);
+
+    Valor_hora = salario_minimo / 8.0;
+    Valor_hora_extra = salario_minimo / 4.0;
+
+    Salario_bruto = horas_trabalhadas * valor_hora;
+    Float quantia_horas_extra = horas_extras * valor_hora_extra;
+
+    Salario_total = salario_bruto + quantia_horas_extra;
+    
+    Printf(“O salario a receber e: %.2f\n”, salario_total);
+
+    Return 0;
+}
+
+22-Faça um programa que receba o número de lados de um polígono convexo, calcule e mostre o número
+De diagonais desse polígono. Sabe-se que ND = N * (N – 3)/2, em que N é o número de lados do
+Polígono.
+
+#include <stdio.h>
+
+Int main() {
+    Int num_lados, num_diagonais;
+
+    Printf(“Digite o numero de lados do poligono convexo: “);
+    Scanf(“%d”, &num_lados);
+
+    Num_diagonais = num_lados * (num_lados – 3) / 2;
+
+    Printf(“O numero de diagonais do poligono convexo e: %d\n”, num_diagonais);
+
+    Return 0;
+}
+
+ 23-Faça um programa que receba a medida de dois ângulos de um triângulo, calcule e mostre a medida do
+Terceiro ângulo. Sabe-se que a soma dos ângulos de um triângulo é 180 graus.
+
+#include <stdio.h>
+
+Int main() {
+    Float angulo1, angulo2, angulo3;
+
+    Printf(“Digite a medida do primeiro ângulo: “);
+    Scanf(“%f”, &angulo1);
+
+    Printf(“Digite a medida do segundo ângulo: “);
+    Scanf(“%f”, &angulo2);
+
+
+    Angulo3 = 180 – (angulo1 + angulo2);
+
+
+    Printf(“A medida do terceiro ângulo e: %.2f\n”, angulo3);
+
+    Return 0;
+}
+
+
+24-Faça um programa que receba a quantidade de dinheiro em reais que uma pessoa que vai viajar possui. Ela
+Vai passar por vários países e precisa converter seu dinheiro em dólares, marco alemão e libra esterlina. Sabe-
+-se que a cotação do dólar é de R$ 1,80; do marco alemão, de R$ 2,00; e da libra esterlina, de R$ 3,57. O
+Programa deve fazer as conversões e mostrá-las.
+
+ #include <stdio.h>
+
+Int main() {
+    Float dinheiro_reais, dinheiro_dolares, dinheiro_marcos, dinheiro_libras;
+    Const float cotacao_dolar = 1.80;
+    Const float cotacao_marco = 2.00;
+    Const float cotacao_libra = 3.57;
+
+
+    Printf(“Digite a quantidade de dinheiro em reais: “);
+    Scanf(“%f”, &dinheiro_reais);
+
+
+    Dinheiro_dolares = dinheiro_reais / cotacao_dolar;
+    Dinheiro_marcos = dinheiro_reais / cotacao_marco;
+    Dinheiro_libras = dinheiro_reais / cotacao_libra;
+
+
+    Printf(“Quantidade de dinheiro em Dolares: %.2f\n”, dinheiro_dolares);
+    Printf(“Quantidade de dinheiro em Marcos: %.2f\n”, dinheiro_marcos);
+    Printf(“Quantidade de dinheiro em Libras: %.2f\n”, dinheiro_libras);
+
+    Return 0;
+}
+
+25-Faça um programa que receba uma hora (uma variável para hora e outra para minutos), calcule e
+Mostre:
+a) a hora digitada convertida em minutos;
+b) o total dos minutos, ou seja, os minutos digitados mais a conversão anterior;
+c) o total dos minutos convertidos em segundos.
+#include <stdio.h>
+
+Int main() {
+    Int hora, minutos, total_minutos, total_segundos;
+
+
+    Printf(“Digite a hora: “);
+    Scanf(“%d”, &hora);
+    Printf(“Digite os minutos: “);
+    Scanf(“%d”, &minutos);
+
+    Total_minutos = hora * 60 + minutos;
+
+
+    Total_minutos += minutos;
+
+
+    Total_segundos = total_minutos * 60;
+
+
+    Printf(“A hora digitada convertida em minutos: %d\n”, hora * 60);
+    Printf(“O total dos minutos: %d\n”, total_minutos);
+    Printf(“O total dos minutos convertidos em segundos: %d\n”, total_segundos);
+
+    Return 0;
+}
+

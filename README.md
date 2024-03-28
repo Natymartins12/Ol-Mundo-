@@ -1,40 +1,28 @@
 # Ol-Mundo-
 Meu primeiro repositório...
+
 01-Faça um programa que receba dois números, calcule e mostre a subtração do primeiro número pelo segundo.
-
-
 
 #include <studio.h>
 
 
+int main() {
 
-int main()  {    
+    float num1, num2, resultado;
+    printf("Digite o primeiro numero:");
+    scanf("%f", &num1);
+    
+    printf("Digite o segundo numero:");
+    scanf("%f", &num2);
+    
+    resultado = num1 - num2;
+    
+    printf("A subtração de %. 2f pelo %. 2f é %.2f\n", num1, num2, resultado);
+    
+    return 0;
+    
+    }
 
-
-
-float num1, num2, resultado;
-
-printf("Digite o primeiro numero:");
-
-scanf("%f", &num1);
-
-
-
-printf("Digite o segundo numero:");
-
-scanf("%f", &num2);
-
-resultado = num1 - num2;
-
-printf("A subtração de %. 2f pelo %. 2f é %.2f\n", num1, num2, resultado);
-
-
-
-return 0;
-
-
-
-}
 
 02-Faça um programa que receba três números, calcule e mostre a multiplicação desses números.
 
@@ -761,6 +749,7 @@ c) o volume de uma esfera; sabe-se que V = 3⁄4 * p R3
 #define PI 3.14159
 
 Int main() {
+
     Float raio, comprimento, area, volume;
 
     
@@ -814,6 +803,7 @@ A sua área (em m2) e a potência de iluminação que deverá ser utilizada.
 #include <stdio.h>
 
 Int main() {
+
     Float comprimento, largura, area, potencia_iluminacao;
 
     
@@ -842,6 +832,7 @@ sua ponta.
  #include <stdio.h>
 
 int main() {
+
     float angulo_graus, distancia_parede, comprimento_escada;
 
     printf("Digite a medida do angulo em graus: ");
@@ -873,6 +864,7 @@ e) o salário a receber equivale ao salário bruto mais a quantia a receber pela
  #include <stdio.h>
 
 Int main() {
+
     Float horas_trabalhadas, salario_minimo, horas_extras, valor_hora, valor_hora_extra, salario_bruto, salario_total;
 
     
@@ -905,6 +897,7 @@ Polígono.
 #include <stdio.h>
 
 Int main() {
+
     Int num_lados, num_diagonais;
 
     Printf(“Digite o numero de lados do poligono convexo: “);
@@ -923,6 +916,7 @@ Terceiro ângulo. Sabe-se que a soma dos ângulos de um triângulo é 180 graus.
 #include <stdio.h>
 
 Int main() {
+
     Float angulo1, angulo2, angulo3;
 
     Printf(“Digite a medida do primeiro ângulo: “);
@@ -949,6 +943,7 @@ Programa deve fazer as conversões e mostrá-las.
  #include <stdio.h>
 
 Int main() {
+
     Float dinheiro_reais, dinheiro_dolares, dinheiro_marcos, dinheiro_libras;
     Const float cotacao_dolar = 1.80;
     Const float cotacao_marco = 2.00;
